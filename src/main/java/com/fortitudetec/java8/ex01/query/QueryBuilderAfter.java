@@ -3,6 +3,9 @@ package com.fortitudetec.java8.ex01.query;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * Java 8 implementation of QueryBuilder using stream API.
+ */
 public class QueryBuilderAfter implements QueryBuilder {
 
     private static final String DEFAULT_QUERY = "*";

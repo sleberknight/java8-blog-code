@@ -2,6 +2,9 @@ package com.fortitudetec.java8.ex01.query;
 
 import java.util.Map;
 
+/**
+ * Pre-Java 8 implementation of QueryBuilder.
+ */
 public class QueryBuilderBefore implements QueryBuilder {
 
     private static final String DEFAULT_QUERY = "*";

@@ -5,6 +5,9 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
+/**
+ * Java 8 implementation of Cache.
+ */
 public class CacheAfter implements Cache {
 
     private final ConcurrentMap<String, Object> dataCache = new ConcurrentHashMap<>();
