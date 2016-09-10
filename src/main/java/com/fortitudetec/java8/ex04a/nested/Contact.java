@@ -13,6 +13,8 @@ import java.util.List;
 @Builder
 public class Contact {
 
+    private String name;
+
     @Singular
     private List<EmailAddress> emailAddresses;
 }

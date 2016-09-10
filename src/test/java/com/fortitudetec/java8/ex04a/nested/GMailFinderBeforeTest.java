@@ -33,9 +33,11 @@ public class GMailFinderBeforeTest {
     public void testFindFirstGMail_WhenNoGMails() {
         ContactRepository contacts = ContactRepository.builder()
                 .contact(Contact.builder()
+                        .name("Bob")
                         .emailAddress(new YahooEmailAddress("bob@yahoo.com"))
                         .build())
                 .contact(Contact.builder()
+                        .name("Sally")
                         .emailAddress(new ExhangeEmailAddress("sally@exchange.com"))
                         .emailAddress(new YahooEmailAddress("sally@yahoo.com"))
                         .build())
@@ -45,7 +47,7 @@ public class GMailFinderBeforeTest {
 
     @Test
     public void testFindFirstGMail_WhenEmailsAreNull() {
-        Contact contact = Contact.builder().build();
+        Contact contact = Contact.builder().name("Alice").build();
         contact.setEmailAddresses(null);
         assertThat(contact.getEmailAddresses()).isNull();
         ContactRepository contacts = ContactRepository.builder()
@@ -59,10 +61,12 @@ public class GMailFinderBeforeTest {
         GMailEmailAddress gmail = new GMailEmailAddress("bob@gmail.com");
         ContactRepository contacts = ContactRepository.builder()
                 .contact(Contact.builder()
+                        .name("Sam")
                         .emailAddress(new YahooEmailAddress("sam@yahoo.com"))
                         .emailAddress(new ExhangeEmailAddress("sam@exchange.com"))
                         .build())
                 .contact(Contact.builder()
+                        .name("Bob")
                         .emailAddress(new YahooEmailAddress("bob@yahoo.com"))
                         .emailAddress(gmail)
                         .emailAddress(new ExhangeEmailAddress("bob@exchange.com"))
@@ -76,10 +80,12 @@ public class GMailFinderBeforeTest {
         GMailEmailAddress gmail = new GMailEmailAddress("bob@gmail.com");
         ContactRepository contacts = ContactRepository.builder()
                 .contact(Contact.builder()
+                        .name("Sam")
                         .emailAddress(new YahooEmailAddress("sam@yahoo.com"))
                         .emailAddress(new ExhangeEmailAddress("sam@exchange.com"))
                         .build())
                 .contact(Contact.builder()
+                        .name("Bob")
                         .emailAddress(new YahooEmailAddress("bob@yahoo.com"))
                         .emailAddress(gmail)
                         .emailAddress(new GMailEmailAddress("bob_2@gmail.com"))
