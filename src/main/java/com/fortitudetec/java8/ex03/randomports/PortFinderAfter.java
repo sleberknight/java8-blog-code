@@ -33,7 +33,7 @@ public class PortFinderAfter {
 
     /**
      * @return an optional containing the free port number, or an empty optional if no open port was found
-     * after {{@link #MAX_PORT_CHECK_ATTEMPTS}} attempts
+     * after {@link #MAX_PORT_CHECK_ATTEMPTS} attempts
      */
     public OptionalInt findFreePort() {
         IntSupplier randomPorts = () -> MIN_PORT + random.nextInt(PORTS_IN_RANGE);
