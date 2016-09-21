@@ -15,7 +15,7 @@ public class PortFinderBefore {
 
     @VisibleForTesting static final int MIN_PORT = 1024;
     @VisibleForTesting static final int MAX_PORT = 65535;
-    @VisibleForTesting static final int PORTS_IN_RANGE = MAX_PORT - MIN_PORT + 1;
+    private static final int PORTS_IN_RANGE = MAX_PORT - MIN_PORT + 1;
     @VisibleForTesting static final int MAX_PORT_CHECK_ATTEMPTS = 100;
 
     private final Random random;
@@ -32,7 +32,7 @@ public class PortFinderBefore {
     }
 
     /**
-     * @return the free port number, or null if no open port was found after {{@link #MAX_PORT_CHECK_ATTEMPTS}} attempts
+     * @return the free port number, or null if no open port was found after {@link #MAX_PORT_CHECK_ATTEMPTS} attempts
      */
     public Integer findFreePort() {
         int assignedPort = -1;

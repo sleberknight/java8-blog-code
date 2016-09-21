@@ -15,7 +15,7 @@ public class PortFinderAfter {
 
     @VisibleForTesting static final int MIN_PORT = 1024;
     @VisibleForTesting static final int MAX_PORT = 65535;
-    @VisibleForTesting static final int PORTS_IN_RANGE = MAX_PORT - MIN_PORT + 1;
+    private static final int PORTS_IN_RANGE = MAX_PORT - MIN_PORT + 1;
     @VisibleForTesting static final int MAX_PORT_CHECK_ATTEMPTS = 100;
 
     private final Random random;

@@ -5,7 +5,9 @@ import java.util.Set;
 
 /**
  * Cache and its implementations accompany this blog:
- * TODO
+ * <a href="http://www.sleberknight.com/blog/sleberkn/entry/towards_more_functional_java_using1">
+ *     Towards More Functional Java using Lambdas as Predicates
+ * </a>
  */
 public interface Cache {
 
