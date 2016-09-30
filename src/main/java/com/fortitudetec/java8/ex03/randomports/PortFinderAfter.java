@@ -13,7 +13,8 @@ import java.util.stream.IntStream;
  */
 public class PortFinderAfter {
 
-    @VisibleForTesting static final int MIN_PORT = 1024;
+    // Only use ports in dynamic/private range (see www.iana.org/assignments/port-numbers)
+    @VisibleForTesting static final int MIN_PORT = 49152;
     @VisibleForTesting static final int MAX_PORT = 65535;
     private static final int PORTS_IN_RANGE = MAX_PORT - MIN_PORT + 1;
     @VisibleForTesting static final int MAX_PORT_CHECK_ATTEMPTS = 100;
