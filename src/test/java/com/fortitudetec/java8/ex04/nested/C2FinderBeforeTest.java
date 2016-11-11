@@ -71,7 +71,7 @@ public class C2FinderBeforeTest {
                 .b(B.builder()
                         .c(new C1("c1-2"))
                         .c(theC2)
-                        .c(new C3("c3-2"))
+                        .c(new C3("c3-1"))
                         .c(new C3("c3-2"))
                         .build())
                 .build();
@@ -89,7 +89,7 @@ public class C2FinderBeforeTest {
                         .c(new C1("c1-2"))
                         .c(firstC2)
                         .c(new C2("c2-2"))
-                        .c(new C3("c3-2"))
+                        .c(new C3("c3-1"))
                         .c(new C3("c3-2"))
                         .build())
                 .build();

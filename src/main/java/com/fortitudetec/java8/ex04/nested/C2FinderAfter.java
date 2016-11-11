@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 /**
  * Java 8 implementation to find C2 (or any type that extends C) in the A data structure.
  * Shows several iterations of findFirstC2 method, ending up at the generic {@link #findFirst(A, Class)}
- * method.
+ * method. This implementation assumes that the collections could be null and defensively checks these cases.
  * <p>
  * Accompanies blog: TODO write the blog
  */

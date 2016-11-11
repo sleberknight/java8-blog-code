@@ -4,6 +4,7 @@ import java.util.List;
 
 /**
  * Pre-Java 8 implementation to find the first instance of C2 within the A data structure.
+ * This implementation assumes that the collections could be null and defensively checks these cases.
  * <p>
  * Accompanies blog: TODO write the blog
  */

@@ -24,6 +24,9 @@ public class EmailFinderAfter {
         return toStreamOfEmail(contacts, clazz).collect(Collectors.toList());
     }
 
+    /**
+     * This implementation assumes that the collections could be null and defensively checks these cases.
+     */
     private <T extends EmailAddress> Stream<T> toStreamOfEmail(ContactRepository contacts, Class<T> clazz) {
         return Optional.ofNullable(contacts)
                 .map(ContactRepository::getContacts)

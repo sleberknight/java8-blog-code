@@ -7,6 +7,9 @@ import java.util.List;
  */
 public class GMailFinderBefore {
 
+    /**
+     * This implementation assumes the returned collections could be null.
+     */
     public GMailEmailAddress findFirstGMailAddress(ContactRepository contactRepository) {
         if (contactRepository == null || contactRepository.getContacts() == null) {
             return null;
