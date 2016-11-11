@@ -4,6 +4,8 @@ import java.util.List;
 
 /**
  * Pre-Java 8 implementation to find the first instance of {@link GMailEmailAddress} in a {@link ContactRepository}.
+ * <p>
+ * Accompanies blog: TODO write the blog
  */
 public class GMailFinderBefore {
 

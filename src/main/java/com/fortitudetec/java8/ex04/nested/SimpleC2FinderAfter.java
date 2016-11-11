@@ -5,6 +5,8 @@ import java.util.Optional;
 /**
  * Java 8 implementation to find C2 (or any type that extends C) in the A data structure.
  * This implementation assumes that the argument and nested collections are not null.
+ * <p>
+  * Accompanies blog: TODO write the blog
  */
 public class SimpleC2FinderAfter {
 

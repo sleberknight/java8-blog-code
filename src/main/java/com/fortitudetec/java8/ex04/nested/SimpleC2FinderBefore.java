@@ -3,6 +3,8 @@ package com.fortitudetec.java8.ex04.nested;
 /**
  * Pre-Java 8 implementation to find the first instance of C2 within the A data structure.
  * This implementation assumes that the argument and nested collections are not null.
+ * <p>
+  * Accompanies blog: TODO write the blog
  */
 public class SimpleC2FinderBefore {
 

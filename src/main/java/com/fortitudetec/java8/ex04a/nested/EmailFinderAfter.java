@@ -9,6 +9,8 @@ import java.util.stream.Stream;
 
 /**
  * Java 8 implementation to find {@link EmailAddress}es in a {@link ContactRepository}.
+ * <p>
+ * Accompanies blog: TODO write the blog
  */
 public class EmailFinderAfter {
 
