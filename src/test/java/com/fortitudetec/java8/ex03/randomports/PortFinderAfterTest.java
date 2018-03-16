@@ -11,7 +11,7 @@ import static com.fortitudetec.java8.ex03.randomports.PortFinderAfter.MAX_PORT;
 import static com.fortitudetec.java8.ex03.randomports.PortFinderAfter.MAX_PORT_CHECK_ATTEMPTS;
 import static com.fortitudetec.java8.ex03.randomports.PortFinderAfter.MIN_PORT;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Matchers.anyInt;
+import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
