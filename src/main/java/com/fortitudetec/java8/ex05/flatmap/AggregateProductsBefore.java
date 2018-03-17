@@ -3,6 +3,9 @@ package com.fortitudetec.java8.ex05.flatmap;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Shows imperative style aggregation using nested loops and a conditional.
+ */
 public class AggregateProductsBefore implements ProductAggregator {
 
     @Override

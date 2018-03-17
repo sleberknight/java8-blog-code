@@ -4,6 +4,9 @@ import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
+/**
+ * Shows functional style aggregation using flatMap (instead of nested loops) and filter.
+ */
 public class AggregateProductsAfter implements ProductAggregator {
 
     public List<Product> aggregateByCategory(List<Location> locations, String category) {

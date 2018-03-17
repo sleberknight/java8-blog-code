@@ -5,6 +5,10 @@ import java.util.function.Predicate;
 
 import static java.util.stream.Collectors.toList;
 
+/**
+ * Shows functional style aggregation, adding a more generic method that accepts any {@link Predicate}
+ * to make the function more flexible (since you supply any predicate on Products).
+ */
 public class AggregateProductsAfterGeneric implements ProductAggregatorExtended {
 
     public List<Product> aggregateByCategory(List<Location> locations, String category) {
